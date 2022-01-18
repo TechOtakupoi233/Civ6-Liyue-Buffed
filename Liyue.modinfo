@@ -39,30 +39,13 @@
     </Criteria>
   </ActionCriteria>
   <FrontEndActions>
-    <UpdateDatabase id="LiyueConfigData">
-      <File>Data/Liyue_Config.sql</File>
-    </UpdateDatabase>
     <UpdateText id="LiyueConfigText">
       <Properties>
         <LoadOrder>10</LoadOrder>
       </Properties>
       <File>Text/Liyue_ConfigTextCN.xml</File>
       <File>Text/Liyue_ConfigText.xml</File>
-      <File>Text/Liyue_SharedText.sql</File>
     </UpdateText>
-    <UpdateIcons id="LiyueConfigIcons">
-      <Properties>
-        <LoadOrder>10</LoadOrder>
-      </Properties>
-      <File>Data/Liyue_Icons.xml</File>
-      <File>Data/Genshin_Shared_Icon.sql</File>
-    </UpdateIcons>
-    <UpdateArt id="LiyueConfigArt">
-      <File>Liyue.dep</File>
-    </UpdateArt>
-    <UpdateColors id="LiyueConfigColors">
-      <File>Data/Liyue_Colors.xml</File>
-    </UpdateColors>
   </FrontEndActions>
   <InGameActions>
     <UpdateDatabase id="LiyueDatebase">
@@ -109,18 +92,6 @@
       <File>Text/Liyue_TextEN.xml</File>
       <File>Text/Liyue_SharedText.sql</File>
     </UpdateText>
-    <UpdateArt id="LiyueArt">
-      <Criteria>leaderPlayable</Criteria>
-      <File>Liyue.dep</File>
-    </UpdateArt>
-    <UpdateColors id="LiyueColors">
-      <Criteria>leaderPlayable</Criteria>
-      <File>Data/Liyue_Colors.xml</File>
-    </UpdateColors>
-    <UpdateAudio id="LiyueAudio">
-      <Criteria>leaderPlayable</Criteria>
-      <File>Platforms/Windows/Audio/LiyueSoundBanks.ini</File>
-    </UpdateAudio>
     <AddGameplayScripts id="LiyueGameplayScripts">
       <Criteria>leaderPlayable</Criteria>
       <File>Data/Liyue_Keqing_Ability.lua</File>
@@ -153,103 +124,16 @@
       <File>Data/Genshin_Shared_UI.lua</File>
       <File>Data/Genshin_Shared_UI.xml</File>
     </AddUserInterfaces>
-    <UpdateAudio id="LiyueAudio_NoMondstadtXP1andBeyond">
-      <Criteria>leaderPlayable</Criteria>
-      <Criteria>Expansion1</Criteria>
-      <Criteria>Mondstadt</Criteria>
-      <File>Platforms/Windows/Audio/GENSHIN_MONDSTADT_MUSIC.ini</File>
-    </UpdateAudio>
   </InGameActions>
   <Files>
-    <File>ArtDefs/Building.artdef</File>
-    <File>ArtDefs/Civilization.artdef</File>
-    <File>ArtDefs/Cultures.artdef</File>
-    <File>ArtDefs/District.artdef</File>
-    <File>ArtDefs/FallbackLeaders.artdef</File>
-    <File>ArtDefs/Improvement.artdef</File>
-    <File>ArtDefs/Landmark.artdef</File>
-    <File>ArtDefs/Overlay.artdef</File>
-    <File>ArtDefs/StrategicView.artdef</File>
-    <File>ArtDefs/Units.artdef</File>
-    <File>Data/Genshin_Shared_Data.lua</File>
-    <File>Data/Genshin_Shared_Data.sql</File>
-    <File>Data/Genshin_Shared_Icon.sql</File>
-    <File>Data/Genshin_Shared_UI.lua</File>
-    <File>Data/Genshin_Shared_UI.xml</File>
-    <File>Data/Genshin_Shared_XP2.sql</File>
-    <File>Data/Liyue_Agendas.xml</File>
     <File>Data/Liyue_Civilization.sql</File>
-    <File>Data/Liyue_Colors.xml</File>
     <File>Data/Liyue_Config.sql</File>
     <File>Data/Liyue_Expansion1.sql</File>
     <File>Data/Liyue_Expansion2.sql</File>
     <File>Data/Liyue_Ganyu.xml</File>
-    <File>Data/Liyue_Icons.xml</File>
     <File>Data/Liyue_Keqing_Ability.lua</File>
     <File>Data/Liyue_Leaders.sql</File>
     <File>Data/Liyue_Ningguang.xml</File>
-    <File>Data/Liyue_UnitAbilities.xml</File>
-    <File>Liyue.dep</File>
-    <File>Platforms/MacOS/BLPs/DLC_Icons.blp</File>
-    <File>Platforms/MacOS/BLPs/DLC_Monastery.blp</File>
-    <File>Platforms/MacOS/BLPs/DLC_Strategicview.blp</File>
-    <File>Platforms/MacOS/BLPs/LeaderFallbacks.blp</File>
-    <File>Platforms/MacOS/BLPs/LiyueUI.blp</File>
-    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_DiffuseTint_IMP_Monastery_B_null</File>
-    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_IMP_Monastery_A</File>
-    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_IMP_Monastery_E</File>
-    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_IMP_Monastery_G</File>
-    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_IMP_Monastery_N0</File>
-    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_IMP_Monastery_N1</File>
-    <File>Platforms/Windows/Audio/1004924057.wem</File>
-    <File>Platforms/Windows/Audio/158279736.wem</File>
-    <File>Platforms/Windows/Audio/167037324.wem</File>
-    <File>Platforms/Windows/Audio/178322394.wem</File>
-    <File>Platforms/Windows/Audio/18300585.wem</File>
-    <File>Platforms/Windows/Audio/188830929.wem</File>
-    <File>Platforms/Windows/Audio/19721606.wem</File>
-    <File>Platforms/Windows/Audio/341379077.wem</File>
-    <File>Platforms/Windows/Audio/422383566.wem</File>
-    <File>Platforms/Windows/Audio/429053686.wem</File>
-    <File>Platforms/Windows/Audio/430139044.wem</File>
-    <File>Platforms/Windows/Audio/464496937.wem</File>
-    <File>Platforms/Windows/Audio/55857402.wem</File>
-    <File>Platforms/Windows/Audio/73328597.wem</File>
-    <File>Platforms/Windows/Audio/831323415.wem</File>
-    <File>Platforms/Windows/Audio/837128982.wem</File>
-    <File>Platforms/Windows/Audio/84251604.wem</File>
-    <File>Platforms/Windows/Audio/876651436.wem</File>
-    <File>Platforms/Windows/Audio/884135446.wem</File>
-    <File>Platforms/Windows/Audio/894940137.wem</File>
-    <File>Platforms/Windows/Audio/901895987.wem</File>
-    <File>Platforms/Windows/Audio/91062406.wem</File>
-    <File>Platforms/Windows/Audio/GENSHIN_MONDSTADT_MUSIC.ini</File>
-    <File>Platforms/Windows/Audio/LiyueBGM.bnk</File>
-    <File>Platforms/Windows/Audio/LiyueBGM.txt</File>
-    <File>Platforms/Windows/Audio/LiyueBGM.xml</File>
-    <File>Platforms/Windows/Audio/LiyueLeaderSpeechBank.bnk</File>
-    <File>Platforms/Windows/Audio/LiyueLeaderSpeechBank.txt</File>
-    <File>Platforms/Windows/Audio/LiyueLeaderSpeechBank.xml</File>
-    <File>Platforms/Windows/Audio/LiyueSoundBanks.ini</File>
-    <File>Platforms/Windows/Audio/Mondstadt_Music_Bank.bnk</File>
-    <File>Platforms/Windows/Audio/Mondstadt_Music_Bank.xml</File>
-    <File>Platforms/Windows/BLPs/DLC_Icons.blp</File>
-    <File>Platforms/Windows/BLPs/DLC_Monastery.blp</File>
-    <File>Platforms/Windows/BLPs/DLC_Strategicview.blp</File>
-    <File>Platforms/Windows/BLPs/LeaderFallbacks.blp</File>
-    <File>Platforms/Windows/BLPs/Leaders.blp</File>
-    <File>Platforms/Windows/BLPs/LiyueUI.blp</File>
-    <File>Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_DiffuseTint_IMP_Monastery_B_null</File>
-    <File>Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_IMP_Monastery_A</File>
-    <File>Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_IMP_Monastery_E</File>
-    <File>Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_IMP_Monastery_G</File>
-    <File>Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_IMP_Monastery_N0</File>
-    <File>Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_IMP_Monastery_N1</File>
-    <File>Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_Loyalty_Overlay_Liyue</File>
-    <File>Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_Loyalty_Pressure_Liyue</File>
-    <File>Platforms/Windows/BLPs/strategicview/strategicview_uilenses.blp</File>
-    <File>Platforms/Windows/BLPs/UILensAssets.blp</File>
-    <File>Platforms/Windows/BLPs/UI/PrideMoments.blp</File>
     <File>Text/Liyue_ConfigText.xml</File>
     <File>Text/Liyue_ConfigTextCN.xml</File>
     <File>Text/Liyue_SharedText.sql</File>
