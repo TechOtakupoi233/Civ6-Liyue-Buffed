@@ -10,23 +10,26 @@
     <SpecialThanks>Dwughjsd, KevinLiu, hemmelfort</SpecialThanks>
     <CompatibleVersions>1.2,2.0</CompatibleVersions>
   </Properties>
+  <Dependencies>
+    <Mod id="4fda3be4-c2a6-43fd-8e2e-4936ac7e8ae4" title="Liyue Civilization Pack"/>
+  </Dependencies>
   <LocalizedText>
     <Text id="LOC_LIYUE_BUFF_MOD_TITLE_CL">
       <en_US>Liyue Civilization Pack</en_US>
 			<zh_Hans_CN>璃月文明包-强化</zh_Hans_CN>
 		</Text>
 		<Text id="LOC_LIYUE_BUFF_MOD_TEASER_CL">
-      <en_US>New Civilization and Leader - Keqing of Liyue</en_US>
-			<zh_Hans_CN>强化的新文明和领袖——璃月的刻晴与凝光</zh_Hans_CN>
+      <en_US>Buff mod for Liyue Civilization Pack.</en_US>
+			<zh_Hans_CN>璃月文明包的强化补丁。</zh_Hans_CN>
 		</Text>
 		<Text id="LOC_LIYUE_BUFF_MOD_DESCRIPTION_CL">
-      <en_US>Contains a new civilization and leader.</en_US>
-			<zh_Hans_CN>包含强化的1个新文明和2个领袖。</zh_Hans_CN>
+      <en_US>Buff mod for Liyue Civilization Pack.</en_US>
+			<zh_Hans_CN>璃月文明包的强化补丁。</zh_Hans_CN>
 		</Text>
   </LocalizedText>
   <ActionCriteria>
     <Criteria id="leaderPlayable">
-      <LeaderPlayable>Players:StandardPlayers::LEADER_KEQING,Players:Expansion1_Players::LEADER_KEQING,Players:Expansion2_Players::LEADER_KEQING</LeaderPlayable>
+      <LeaderPlayable>Players:StandardPlayers::LEADER_KEQING,Players:StandardPlayers::LEADER_NINGGUANG,Players:Expansion1_Players::LEADER_KEQING,Players:Expansion1_Players::LEADER_NINGGUANG,Players:Expansion2_Players::LEADER_KEQING,Players:Expansion2_Players::LEADER_NINGGUANG</LeaderPlayable>
     </Criteria>
     <Criteria id="Expansion1">
       <GameCoreInUse>Expansion1,Expansion2</GameCoreInUse>
@@ -57,7 +60,6 @@
       <File>Data/Liyue_Civilization.sql</File>
       <File>Data/Liyue_Leaders.sql</File>
       <File>Data/Liyue_UnitAbilities.xml</File>
-      <File>Data/Liyue_Agendas.xml</File>
     </UpdateDatabase>
     <UpdateDatabase id="LiyueDatebase_XP1andBeyond">
       <Criteria>leaderPlayable</Criteria>
