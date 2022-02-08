@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+    <TraitModifiers>
+        <Row TraitType="TRAIT_LEADER_QIXING_YUHENG" ModifierId="MOD_MLGA_BUILDER_DISTRICT"/>
+        <Row TraitType="TRAIT_LEADER_QIXING_YUHENG" ModifierId="MOD_MLGA_BUILDER_PROJECT"/>
+        <Row TraitType="TRAIT_TIANQUAN" ModifierId="MOD_MLGA_DISTRICT_DISCOUNT"/>
+        <Row TraitType="TRAIT_TIANQUAN" ModifierId="MOD_MLGA_BUILDING_DISCOUNT"/>
+        <Row TraitType="TRAIT_TIANQUAN" ModifierId="MOD_MLGA_UNIT_DISCOUNT"/>
+    </TraitModifiers>
+    <Modifiers>
+		    <Row ModifierId="MOD_MLGA_BUILDER_DISTRICT" ModifierType="MODIFIER_PLAYER_ADJUST_UNIT_DISTRICT_PERCENT"/>
+		    <Row ModifierId="MOD_MLGA_BUILDER_PROJECT" ModifierType="MODIFIER_PLAYER_ADJUST_UNIT_PROJECT_PERCENT"/>
+        <Row ModifierId="MOD_MLGA_DISTRICT_DISCOUNT" ModifierType="MODIFIER_SINGLE_CITY_ADJUST_ALL_DISTRICT_PURCHASE_COST"/>
+        <Row ModifierId="MOD_MLGA_BUILDING_DISCOUNT" ModifierType="MODIFIER_SINGLE_CITY_ADJUST_ALL_BUILDINGS_PURCHASE_COST"/>
+        <Row ModifierId="MOD_MLGA_UNIT_DISCOUNT" ModifierType="MODIFIER_SINGLE_CITY_ADJUST_ALL_UNIT_PURCHASE_COST"/>
+    </Modifiers>
+    <ModifierArguments>
+		    <Row ModifierId="MOD_MLGA_BUILDER_DISTRICT" Name="Amount" Value="20"/>
+		    <Row ModifierId="MOD_MLGA_BUILDER_PROJECT" Name="Amount" Value="10"/>
+        <Row ModifierId="MOD_MLGA_DISTRICT_DISCOUNT" Name="Amount" Value="20"/>
+        <Row ModifierId="MOD_MLGA_BUILDING_DISCOUNT" Name="Amount" Value="20"/>
+        <Row ModifierId="MOD_MLGA_UNIT_DISCOUNT" Name="Amount" Value="20"/>
+    </ModifierArguments>
+</GameData>
