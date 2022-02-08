@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+    <EnglishText>
+
+    </EnglishText>
+	<LocalizedText>
+        <Replace Language="zh_Hans_CN" Tag="LOC_TRAIT_LEADER_QIXING_YUHENG_DESCRIPTION">
+			<Text>购买的单位在该回合就能行动。平民单位无视地貌和地形的 [ICON_Movement] 移动力惩罚。每回合建造者和军事工程师建造后可立即恢复一次全部 [ICON_Movement] 移动力。[NEWLINE]建造者可花费使用次数加速区域和项目的进度，且可花费金币重组建造者单位。</Text>
+        </Replace>
+        <Replace Language="zh_Hans_CN" Tag="LOC_TRAIT_LEADER_QIXING_TIANQUAN_DESCRIPTION">
+            <Text>存在通往一个文明的国际 [ICON_TradeRoute] 贸易路线时，对该文明的 [ICON_VisLimited] 外交能见度上升1级。间谍初始便拥有“监视”升级。从国际 [ICON_TradeRoute] 贸易路线 +1 [ICON_Culture] 文化值和 +1 [ICON_Faith] 信仰值，且 [ICON_Gold] 金币产出 +50%。[NEWLINE]购买单位、建筑和区域时花费金币-20%。</Text>
+        </Replace>
+    </LocalizedText>
+</GameData>
