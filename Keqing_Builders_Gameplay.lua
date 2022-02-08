@@ -1,5 +1,5 @@
 
-function OnRegroupButtonClicked(iX,iY,pUnit)
+function Regroupfunction(iX,iY,pUnit)
     if pUnit ~= nil then
         local pPlayer = Players[playerID];
         local iUnitType = "UNIT_BUILDER";
@@ -9,4 +9,4 @@ function OnRegroupButtonClicked(iX,iY,pUnit)
     end
 end
 
-ExposedMembers.RegroupButton.Unit = OnRegroupButtonClicked
+ExposedMembers.RegroupButton.Unit = Regroupfunction

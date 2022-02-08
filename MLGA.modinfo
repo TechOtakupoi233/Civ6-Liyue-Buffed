@@ -11,22 +11,22 @@
     <CompatibleVersions>1.2,2.0</CompatibleVersions>
   </Properties>
   <Dependencies>
-    <Mod id="4fda3be4-c2a6-43fd-8e2e-4936ac7e8ae4" title="Liyue Civilization Pack"/>
+    <Mod id="4fda3be4-c2a6-43fd-8e2e-4936ac7e8ae4" title="MLGA Civilization Pack"/>
   </Dependencies>
   <References>
     <Mod id="4873eb62-8ccc-4574-b784-dda455e74e68" title="LOC_EXPANSION2_MOD_TITLE" />
   </References>
   <LocalizedText>
     <Text id="LOC_MLGA_MOD_TITLE_CL">
-      <en_US>Liyue Civilization Pack-MLGA</en_US>
+      <en_US>MLGA Civilization Pack-MLGA</en_US>
 			<zh_Hans_CN>璃月文明包-MLGA</zh_Hans_CN>
 		</Text>
 		<Text id="LOC_MLGA_MOD_TEASER_CL">
-      <en_US>Make Liyue Great Again!</en_US>
+      <en_US>Make MLGA Great Again!</en_US>
 			<zh_Hans_CN>让璃月再次伟大！</zh_Hans_CN>
 		</Text>
 		<Text id="LOC_MLGA_MOD_DESCRIPTION_CL">
-      <en_US>Buff mod for Liyue Civilization Pack.</en_US>
+      <en_US>Buff mod for MLGA Civilization Pack.</en_US>
 			<zh_Hans_CN>璃月文明包的领袖加强针，旨在提供无双模式的游戏体验。</zh_Hans_CN>
 		</Text>
   </LocalizedText>
@@ -39,7 +39,7 @@
     </Criteria>
   </ActionCriteria>
   <FrontEndActions>
-    <UpdateText id="LiyueConfigText">
+    <UpdateText id="MLGAConfigText">
       <Properties>
         <LoadOrder>10</LoadOrder>
       </Properties>
@@ -47,12 +47,12 @@
     </UpdateText>
   </FrontEndActions>
   <InGameActions>
-    <UpdateDatabase id="LiyueDatebase_XP1andBeyond">
+    <UpdateDatabase id="MLGADatebase_XP1andBeyond">
       <Criteria>leaderPlayable</Criteria>
       <Criteria>Expansion1</Criteria>
       <File>MLGA_Leaders.xml</File>
     </UpdateDatabase>
-    <UpdateText id="LiyueText">
+    <UpdateText id="MLGAText">
       <Properties>
         <LoadOrder>10</LoadOrder>
       </Properties>
@@ -60,13 +60,23 @@
       <Criteria>Expansion1</Criteria>
       <File>MLGA_ConfigText.xml</File>
     </UpdateText>
-    <AddGameplayScripts id="LiyueGameplayScripts">
+    <AddGameplayScripts id="MLGAGameplayScripts">
       <Criteria>leaderPlayable</Criteria>
       <File>Keqing_Builders_Gameplay.lua</File>
     </AddGameplayScripts>
+    <AddUserInterfaces id="MLGAUserInterfaces">
+      <Properties>
+        <Context>InGame</Context>
+      </Properties>
+      <Criteria>leaderPlayable</Criteria>
+      <File>Keqing_Builders_UI.xml</File>
+      <File>Keqing_Builders_UI.lua</File>
+    </AddUserInterfaces>
   </InGameActions>
   <Files>
     <File>Keqing_Builders_Gameplay.lua</File>
+    <File>Keqing_Builders_UI.xml</File>
+    <File>Keqing_Builders_UI.lua</File>
     <File>MLGA_Leaders.xml</File>
     <File>MLGA_ConfigText.xml</File>
   </Files>

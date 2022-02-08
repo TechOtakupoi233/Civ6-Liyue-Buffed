@@ -4,14 +4,14 @@ function OnUnitSelectionChanged(iPlayerID, iUnitID, iPlotX, iPlotY, iPlotZ, bSel
     if bSelected then
         local pUnit = UnitManager.GetUnit(iPlayerID, iUnitID)
         if pUnit:GetType() ~= m_BuilderIndex then
-            Controls.RegroupButtonGrid:SetHide(true)
+            Controls.RegroupButtonGrid:SetHide(false)
             return
         end
     end
 end
 -- 按钮被点击之后
 function OnRegroupButtonClicked()
-    local pUnit = UI.GetHeadSelectedUnit()
+    local pUnit = UnitManager.GetUnit(iPlayerID, iUnitID)
     local iX = pUnit:GetX()
     local iY = pUnit:GetY()
     ExposedMembers.RegroupButton.Unit(iX, iY, pUnit)
