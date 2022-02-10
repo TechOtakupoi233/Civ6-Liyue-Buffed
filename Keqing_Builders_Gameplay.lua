@@ -1,13 +1,13 @@
 
-function Regroupfunction(iX,iY,unitID : table)
+function Regroupfunction(pUnit)
     if pUnit ~= nil then
         local pPlayer = Players[playerID];
         local iUnitType = "UNIT_BUILDER";
-        local pUnit		:table	= UnitManager.GetUnit(unitID.player, unitID.id);
+        local plot = Map.GetPlot(pUnit:GetX(), pUnit:GetY());
 	    if (pUnit ~= nil) then
 		    UnitManager.RequestCommand( pUnit, UnitCommandTypes.DELETE );
     	end
-        UnitManager.Initunit(pPlayer, iUnitType, iX, iY);
+        UnitManager.Initunit(pPlayer, iUnitType, plot);
         pPlayer:GetTreasury():ChangeGoldBalance(-200);
     end
 end

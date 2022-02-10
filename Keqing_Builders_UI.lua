@@ -12,9 +12,7 @@ end
 -- 按钮被点击之后
 function OnRegroupButtonClicked()
     local pUnit = UI.GetHeadSelectedUnit()
-    local iX = pUnit:GetX()
-    local iY = pUnit:GetY()
-    ExposedMembers.RegroupButton.Unit(iX, iY, pUnit)
+    ExposedMembers.RegroupButton.Unit(pUnit)
 end
 
 
