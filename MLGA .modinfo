@@ -14,7 +14,7 @@
     <Mod id="4fda3be4-c2a6-43fd-8e2e-4936ac7e8ae4" title="MLGA Civilization Pack"/>
   </Dependencies>
   <References>
-    <Mod id="4873eb62-8ccc-4574-b784-dda455e74e68" title="LOC_EXPANSION2_MOD_TITLE"/>
+    <Mod id="4873eb62-8ccc-4574-b784-dda455e74e68" title="LOC_EXPANSION2_MOD_TITLE" />
   </References>
   <LocalizedText>
     <Text id="LOC_MLGA_MOD_TITLE_CL">
@@ -60,18 +60,6 @@
       <Criteria>Expansion1</Criteria>
       <File>MLGA_ConfigText.xml</File>
     </UpdateText>
-    <AddGameplayScripts id="MLGAGameplayScripts">
-      <Criteria>leaderPlayable</Criteria>
-      <File>Keqing_Builders_Gameplay.lua</File>
-    </AddGameplayScripts>
-    <AddUserInterfaces id="MLGAUserInterfaces">
-      <Properties>
-        <Context>InGame</Context>
-      </Properties>
-      <Criteria>leaderPlayable</Criteria>
-      <File>Keqing_Builders_UI.xml</File>
-      <File>Keqing_Builders_UI.lua</File>
-    </AddUserInterfaces>
   </InGameActions>
   <Files>
     <File>Keqing_Builders_Gameplay.lua</File>
