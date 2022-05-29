@@ -6,7 +6,7 @@
             <Text>Civilian units ignore all Movement penalties for crossing rivers, and +2 [ICON_Movement] Movement. Builders can accelerate progress of districts and projects.</Text>
         </Row>
         <Row Tag="LOC_MLGA_NINGGUANG_DESCRIPTION">
-            <Text>Buy Traders for free, Units, Buildings, Districts cost 20% less [ICON_Gold] Gold.</Text>
+            <Text>Buy Traders for free, Units, Buildings, Districts cost 20% less [ICON_Gold] Gold. Cities gain standart yield from incoming trade routes.</Text>
         </Row>
     </EnglishText>
     <LocalizedText>

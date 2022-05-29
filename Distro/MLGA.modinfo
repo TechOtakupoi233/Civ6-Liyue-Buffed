@@ -11,7 +11,7 @@
 		<CompatibleVersions>1.2,2.0</CompatibleVersions>
 	</Properties>
 	<Dependencies>
-		<Mod id="4fda3be4-c2a6-43fd-8e2e-4936ac7e8ae4" title="Liyue Civilization Pack"/>
+		<Mod id="4fda3be4-c2a6-43fd-8e2e-4936ac7e8ae4" title="璃月文明包/Liyue Civilization Pack"/>
 	</Dependencies>
 	<References>
 		<Mod id="4873eb62-8ccc-4574-b784-dda455e74e68" title="LOC_EXPANSION2_MOD_TITLE"/>
@@ -42,6 +42,12 @@
 	 </Criteria>
 	</ActionCriteria>
 	<FrontEndActions>
+	 <UpdateDatabase id="MLGAConfig">
+		<Properties>
+			<LoadOrder>11</LoadOrder>
+		</Properties>
+		<File>MLGA_Config.sql</File>
+	 </UpdateDatabase>
 	 <UpdateText id="MLGAConfigText">
 		<Properties>
 			<LoadOrder>11</LoadOrder>
@@ -76,8 +82,9 @@
 	 </UpdateText>
 	</InGameActions>
 	<Files>
-	 <File>MLGA_Leaders.xml</File>
-	 <File>LMLGA_Ganyu.xml</File>
-	 <File>MLGA_ConfigText.xml</File>
+		<File>MLGA_Config.sql</File>
+		<File>MLGA_Leaders.xml</File>
+		<File>LMLGA_Ganyu.xml</File>
+		<File>MLGA_ConfigText.xml</File>
 	</Files>
 </Mod>

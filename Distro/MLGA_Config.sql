@@ -31,7 +31,7 @@ VALUES
 	/* Dscrptn */ 'LOC_MLGA_KEQING_DESCRIPTION',
 	/* SortIdx */ 114
 ),(
-	/* Domain  */ 'Players:Expansion1_Players',
+	/* Domain  */ 'Players:Expansion2_Players',
 	/* CivType */ 'CIVILIZATION_LIYUE_CL',
 	/* LdrType */ 'LEADER_NINGGUANG',
 	/* ItmType */ 'MLGA',
