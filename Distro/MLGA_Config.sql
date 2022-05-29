@@ -1,0 +1,42 @@
+INSERT INTO PlayerItems (Domain, CivilizationType, LeaderType, Type, Icon, Name, Description, SortIndex)
+VALUES 
+/* Expansion1 */
+(
+	/* Domain  */ 'Players:Expansion1_Players',
+	/* CivType */ 'CIVILIZATION_LIYUE_CL',
+	/* LdrType */ 'LEADER_KEQING',
+	/* ItmType */ 'MLGA',
+	/* ItmIcon */ 'ICON_LEADER_KEQING',
+	/* ItmName */ 'LOC_MLGA_NAME',
+	/* Dscrptn */ 'LOC_MLGA_KEQING_DESCRIPTION',
+	/* SortIdx */ 114
+),(
+	/* Domain  */ 'Players:Expansion1_Players',
+	/* CivType */ 'CIVILIZATION_LIYUE_CL',
+	/* LdrType */ 'LEADER_NINGGUANG',
+	/* ItmType */ 'MLGA',
+	/* ItmIcon */ 'ICON_LEADER_NINGGUANG',
+	/* ItmName */ 'LOC_MLGA_NAME',
+	/* Dscrptn */ 'LOC_MLGA_NINGGUANG_DESCRIPTION',
+	/* SortIdx */ 114
+),
+/* Expansion2 */
+(
+	/* Domain  */ 'Players:Expansion2_Players',
+	/* CivType */ 'CIVILIZATION_LIYUE_CL',
+	/* LdrType */ 'LEADER_KEQING',
+	/* ItmType */ 'MLGA',
+	/* ItmIcon */ 'ICON_LEADER_KEQING',
+	/* ItmName */ 'LOC_MLGA_NAME',
+	/* Dscrptn */ 'LOC_MLGA_KEQING_DESCRIPTION',
+	/* SortIdx */ 114
+),(
+	/* Domain  */ 'Players:Expansion1_Players',
+	/* CivType */ 'CIVILIZATION_LIYUE_CL',
+	/* LdrType */ 'LEADER_NINGGUANG',
+	/* ItmType */ 'MLGA',
+	/* ItmIcon */ 'ICON_LEADER_NINGGUANG',
+	/* ItmName */ 'LOC_MLGA_NAME',
+	/* Dscrptn */ 'LOC_MLGA_NINGGUANG_DESCRIPTION',
+	/* SortIdx */ 114
+);
