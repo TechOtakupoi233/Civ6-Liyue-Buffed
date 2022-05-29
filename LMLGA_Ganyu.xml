@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<GameData>    
-	<Governors>
-		<Update GovernorType="GOVERNOR_GANYU">
-		    <Set TransitionStrength="600"/>
-		</Update>
-	</Governors>
-</GameData>
