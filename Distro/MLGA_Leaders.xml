@@ -22,7 +22,7 @@
 	</Modifiers>
 	<ModifierArguments>
 		<Row ModifierId="MOD_MLGA_YUHENG_BUILDER_DISTRICT" Name="Amount" Value="20"/>
-		<Row ModifierId="MOD_MLGA_YUHENG_BUILDER_PROJECT" Name="Amount" Value="10"/>
+		<Row ModifierId="MOD_MLGA_YUHENG_BUILDER_PROJECT" Name="Amount" Value="20"/>
 		<Row ModifierId="MOD_MLGA_YUHENG_IGNORE_RIVER" Name="ModifierId" Value="MOD_IGNORE_CROSSING_RIVERS_COST"/>
 		<Row ModifierId="MOD_MLGA_YUHENG_CIVILIAN_MOVEMENT" Name="Amount" Value="2"/>
 		<Row ModifierId="MOD_MLGA_TIANQUAN_DISTRICT_DISCOUNT" Name="Amount" Value="20"/>

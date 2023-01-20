@@ -87,6 +87,7 @@
 		<File>MLGA_Leaders.xml</File>
 		<File>LMLGA_Ganyu.xml</File>
 		<File>MLGA_ConfigText.xml</File>
+		<File>MLGA_SPCT.xml</File>
 		<File>Modifiers_Ningguang.sql</File>
 	</Files>
 </Mod>
