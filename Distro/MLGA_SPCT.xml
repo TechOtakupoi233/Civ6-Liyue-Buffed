@@ -16,6 +16,9 @@
 		<Row Type="UNIT_SP_CONSTRUSTION_TEAM" Tag="CLASS_LANDCIVILIAN"/>
 		<Row Type="UNIT_SP_CONSTRUSTION_TEAM" Tag="CLASS_BUILDER"/>
 	</TypeTags>
+	<TypeProperties>
+		<Row Type="UNIT_SP_CONSTRUSTION_TEAM"	Name="CAN_TELEPORT_TO_CITY" Value="true"/>
+	</TypeProperties>
 	<Units>
 		<Row UnitType="UNIT_SP_CONSTRUSTION_TEAM" Cost="80" BaseMoves="3" BaseSightRange="3" ZoneOfControl="false" Domain="DOMAIN_LAND" FormationClass="FORMATION_CLASS_CIVILIAN" PopulationCost="1" PrereqPopulation="2" AdvisorType="ADVISOR_GENERIC" Name="LOC_UNIT_SP_CONSTRUSTION_TEAM_NAME" Description="LOC_UNIT_SP_CONSTRUSTION_TEAM_DESCRIPTION" CanCapture="False" CanRetreatWhenCaptured="True" CostProgressionModel="COST_PROGRESSION_PREVIOUS_COPIES" CostProgressionParam1="4" PurchaseYield="YIELD_GOLD" TraitType="TRAIT_CIVILIZATION_UNIT_SP_CONSTRUSTION_TEAM" BuildCharges="100"/>
 	</Units>
