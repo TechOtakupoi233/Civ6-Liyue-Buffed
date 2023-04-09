@@ -64,7 +64,7 @@
     <Criteria>Expansion1</Criteria>
     <File>MLGA_Leaders.xml</File>
     <File>Modifiers_Ningguang.sql</File>
-    <File>MLGA_Districts.xml</File>
+    <File>MLGA_Districts.sql</File>
     <File>MLGA_SPCT.xml</File>
    </UpdateDatabase>
    <UpdateDatabase id="MLGADatebase_XP2">
@@ -90,7 +90,7 @@
     <File>MLGA_Leaders.xml</File>
     <File>Modifiers_Ningguang.sql</File>
     <File>LMLGA_Ganyu.xml</File>
-    <File>MLGA_Districts.xml</File>
+    <File>MLGA_Districts.sql</File>
     <File>MLGA_SPCT.xml</File>
   </Files>
 </Mod>

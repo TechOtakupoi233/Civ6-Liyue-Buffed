@@ -17,6 +17,9 @@
     </EnglishText>
     <LocalizedText>
         <Row Language="zh_Hans_CN" Tag="LOC_MLGA_NAME" Text="让璃月再次伟大!"/>
+        <Row Language="zh_Hans_CN" Tag="LOC_MLGA_DESCRIPTION">
+            <Text>璃月港和其中的建筑额外获得同级对应的邻接加成、[ICON_TradeRoute] 商路容量、[ICON_Gold] 金币和 [ICON_GreatMerchant] 大商人点数。总督甘雨现在可以立即在任何城市上任。</Text>
+        </Replace>
         <Replace Language="zh_Hans_CN" Tag="LOC_MLGA_KEQING_DESCRIPTION">
             <Text>平民单位无视河流的移动力惩罚，并获得2点额外 [ICON_Movement] 移动力，建造者可花费使用次数加速区域和项目的进度。</Text>
         </Replace>
