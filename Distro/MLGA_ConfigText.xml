@@ -12,7 +12,7 @@
             <Text>Special Constrution Team</Text>
         </Row>
         <Row Tag="LOC_UNIT_SP_CONSTRUSTION_TEAM_DESCRIPTION">
-            <Text>A constrution team direct under Yuheng, have mass amount of buildcharges. Can build improvements, routes and railroad, speed up progress of districts and projects, but cost population.[NEWLINE]Will retreat when captured.</Text>
+            <Text>A constrution team direct under Yuheng, have mass amount of buildcharges. Can build improvements, routes and railroad, speed up progress of districts and projects, but cost population.[NEWLINE]Will retreat when captured, can move to city.</Text>
         </Row>
     </EnglishText>
     <LocalizedText>
@@ -21,13 +21,13 @@
             <Text>平民单位无视河流的移动力惩罚，并获得2点额外 [ICON_Movement] 移动力，建造者可花费使用次数加速区域和项目的进度。</Text>
         </Replace>
         <Replace Language="zh_Hans_CN" Tag="LOC_MLGA_NINGGUANG_DESCRIPTION">
-            <Text>可免费购买商人，购买单位、建筑和区域时花费 [ICON_Gold] 金币-20%。商业中心和港口每有2点邻接加成便为此区域中的建筑+20%[ICON_Gold]金币，至多生效10点邻接加成。通向本文明城市的商路为城市提供标准产出。</Text>
+            <Text>可免费购买商人，购买单位、建筑和区域时花费 [ICON_Gold] 金币-20%。商业中心和港口每有2点邻接加成便为此区域中的建筑+20%[ICON_Gold]金币，至多生效10点邻接加成。通向本文明城市的商路为目的地城市提供标准产出。</Text>
         </Replace>
         <Row Language="zh_Hans_CN" Tag="LOC_UNIT_SP_CONSTRUSTION_TEAM_NAME">
             <Text>直属工程队</Text>
         </Row>
         <Row Language="zh_Hans_CN" Tag="LOC_UNIT_SP_CONSTRUSTION_TEAM_DESCRIPTION">
-            <Text>一支直接效命于玉衡星本人的工程队伍，有极大量行动力。能建造改良设施、道路和铁路、加速区域与项目建造，但需要消耗人口组建。[NEWLINE]在遇敌时会撤退。</Text>
+            <Text>一支玉衡星亲自监理的工程队伍，有极大量行动力。能建造改良设施、道路和铁路、加速区域与项目建造，但需要消耗人口组建。[NEWLINE]在遇敌时会撤退，可以在城市间移动。</Text>
         </Row>
     </LocalizedText>
 </GameData>

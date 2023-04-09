@@ -19,6 +19,15 @@ VALUES
 	/* ItmName */ 'LOC_MLGA_NAME',
 	/* Dscrptn */ 'LOC_MLGA_NINGGUANG_DESCRIPTION',
 	/* SortIdx */ 114
+),(
+	/* Domain  */ 'Players:Expansion1_Players',
+	/* CivType */ 'CIVILIZATION_LIYUE_CL',
+	/* LdrType */ 'LEADER_KEQING',
+	/* ItmType */ 'UNIT_SPCT',
+	/* ItmIcon */ 'ICON_UNIT_SP_CONSTUTION_TEAM',
+	/* ItmName */ 'LOC_UNIT_SP_CONSTRUSTION_TEAM_NAME',
+	/* Dscrptn */ 'LOC_UNIT_SP_CONSTRUSTION_TEAM_DESCRIPTION',
+	/* SortIdx */ 114
 ),
 /* Expansion2 */
 (
@@ -38,5 +47,14 @@ VALUES
 	/* ItmIcon */ 'ICON_LEADER_NINGGUANG',
 	/* ItmName */ 'LOC_MLGA_NAME',
 	/* Dscrptn */ 'LOC_MLGA_NINGGUANG_DESCRIPTION',
+	/* SortIdx */ 114
+),(
+	/* Domain  */ 'Players:Expansion2_Players',
+	/* CivType */ 'CIVILIZATION_LIYUE_CL',
+	/* LdrType */ 'LEADER_KEQING',
+	/* ItmType */ 'UNIT_SPCT',
+	/* ItmIcon */ 'ICON_UNIT_SP_CONSTUTION_TEAM',
+	/* ItmName */ 'LOC_UNIT_SP_CONSTRUSTION_TEAM_NAME',
+	/* Dscrptn */ 'LOC_UNIT_SP_CONSTRUSTION_TEAM_DESCRIPTION',
 	/* SortIdx */ 114
 );

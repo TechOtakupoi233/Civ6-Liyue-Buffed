@@ -17,7 +17,7 @@
 		<Row Type="UNIT_SP_CONSTRUSTION_TEAM" Tag="CLASS_BUILDER"/>
 	</TypeTags>
 	<TypeProperties>
-		<Row Type="UNIT_SP_CONSTRUSTION_TEAM"	Name="CAN_TELEPORT_TO_CITY" Value="true"/>
+		<Row Type="UNIT_SP_CONSTRUSTION_TEAM" Name="CAN_TELEPORT_TO_CITY" Value="true"/>
 	</TypeProperties>
 	<Units>
 		<Row UnitType="UNIT_SP_CONSTRUSTION_TEAM" Cost="80" BaseMoves="3" BaseSightRange="3" ZoneOfControl="false" Domain="DOMAIN_LAND" FormationClass="FORMATION_CLASS_CIVILIAN" PopulationCost="1" PrereqPopulation="2" AdvisorType="ADVISOR_GENERIC" Name="LOC_UNIT_SP_CONSTRUSTION_TEAM_NAME" Description="LOC_UNIT_SP_CONSTRUSTION_TEAM_DESCRIPTION" CanCapture="False" CanRetreatWhenCaptured="True" CostProgressionModel="COST_PROGRESSION_PREVIOUS_COPIES" CostProgressionParam1="4" PurchaseYield="YIELD_GOLD" TraitType="TRAIT_CIVILIZATION_UNIT_SP_CONSTRUSTION_TEAM" BuildCharges="100"/>
@@ -58,46 +58,45 @@
 		<Row DistrictType="DISTRICT_CANAL" UnitType="UNIT_SP_CONSTRUSTION_TEAM" PercentProductionPerCharge="20"/>
 		<Row DistrictType="DISTRICT_DAM" UnitType="UNIT_SP_CONSTRUSTION_TEAM" PercentProductionPerCharge="20"/>
 		<Row DistrictType="DISTRICT_AQUEDUCT" UnitType="UNIT_SP_CONSTRUSTION_TEAM" PercentProductionPerCharge="20"/>
-		<Row DistrictType="DISTRICT_BATH" UnitType="UNIT_SP_CONSTRUSTION_TEAM" PercentProductionPerCharge="20"/>
 	</Building_BuildChargeProductions>
 	<PolicyModifiers>
 		<Row>
 			<PolicyType>POLICY_ILKUM</PolicyType>
-			<ModifierId>ILKUM_CONSTRUSTION_TEAMPRODUCTION</ModifierId>
+			<ModifierId>ILKUM_SP_CONSTRUSTION_TEAMPRODUCTION</ModifierId>
 		</Row>
 		<Row>
 			<PolicyType>POLICY_PUBLIC_WORKS</PolicyType>
-			<ModifierId>PUBLICWORKS_CONSTRUSTION_TEAMPRODUCTION</ModifierId>
+			<ModifierId>PUBLICWORKS_SP_CONSTRUSTION_TEAMPRODUCTION</ModifierId>
 		</Row>
 	</PolicyModifiers>
 	<Modifiers>
 		<Row>
-			<ModifierId>ILKUM_CONSTRUSTION_TEAMPRODUCTION</ModifierId>
+			<ModifierId>ILKUM_SP_CONSTRUSTION_TEAMPRODUCTION</ModifierId>
 			<ModifierType>MODIFIER_PLAYER_UNITS_ADJUST_UNIT_PRODUCTION</ModifierType>
 		</Row>
 		<Row>
-			<ModifierId>PUBLICWORKS_CONSTRUSTION_TEAMPRODUCTION</ModifierId>
+			<ModifierId>PUBLICWORKS_SP_CONSTRUSTION_TEAMPRODUCTION</ModifierId>
 			<ModifierType>MODIFIER_PLAYER_UNITS_ADJUST_UNIT_PRODUCTION</ModifierType>
 		</Row>
 	</Modifiers>
 	<ModifierArguments>
 		<Row>
-			<ModifierId>ILKUM_CONSTRUSTION_TEAMPRODUCTION</ModifierId>
-			<Name>UnitType</Name>
-			<Value>UNIT_BUILDER</Value>
-		</Row>
-		<Row>
-			<ModifierId>ILKUM_CONSTRUSTION_TEAMPRODUCTION</ModifierId>
-			<Name>Amount</Name>
-			<Value>30</Value>
-		</Row>
-		<Row>
-			<ModifierId>PUBLICWORKS_CONSTRUSTION_TEAMPRODUCTION</ModifierId>
+			<ModifierId>ILKUM_SP_CONSTRUSTION_TEAMPRODUCTION</ModifierId>
 			<Name>UnitType</Name>
 			<Value>UNIT_SP_CONSTRUSTION_TEAM</Value>
 		</Row>
 		<Row>
-			<ModifierId>PUBLICWORKS_CONSTRUSTION_TEAMPRODUCTION</ModifierId>
+			<ModifierId>ILKUM_SP_CONSTRUSTION_TEAMPRODUCTION</ModifierId>
+			<Name>Amount</Name>
+			<Value>30</Value>
+		</Row>
+		<Row>
+			<ModifierId>PUBLICWORKS_SP_CONSTRUSTION_TEAMPRODUCTION</ModifierId>
+			<Name>UnitType</Name>
+			<Value>UNIT_SP_CONSTRUSTION_TEAM</Value>
+		</Row>
+		<Row>
+			<ModifierId>PUBLICWORKS_SP_CONSTRUSTION_TEAMPRODUCTION</ModifierId>
 			<Name>Amount</Name>
 			<Value>30</Value>
 		</Row>
