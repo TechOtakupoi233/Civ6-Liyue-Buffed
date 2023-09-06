@@ -3,13 +3,13 @@
     <EnglishText>
         <Row Tag="LOC_MLGA_NAME" Text="Make Liyue Great Again!"/>
         <Row Tag="LOC_MLGA_DESCRIPTION">
-            <Text>Liyue Harbor and buildings inside provide the same adjacency bonus, [ICON_TradeRoute] Traderoute capacity, [ICON_Gold] Gold and [ICON_GreatMerchant] GreatMerchantPoints as what same level of buildings inside Commercial Hub should provide. Governor Ganyu now takes charge of a city at once, and enables purcahsing districts in that city.</Text>
+            <Text>Liyue Harbor and buildings inside provide the same [ICON_TradeRoute] Traderoute capacity, [ICON_Gold] Gold and [ICON_GreatMerchant] GreatMerchantPoints as what same level of buildings inside Commercial Hub should provide. Governor Ganyu now takes charge of a city at once, and enables purcahsing districts in that city.</Text>
         </Row>
         <Row Tag="LOC_MLGA_KEQING_DESCRIPTION">
             <Text>Civilian units ignore all Movement penalties for crossing rivers, and +2 [ICON_Movement] Movement. Builders can accelerate progress of districts and projects.[NEWLINE][NEWLINE]{LOC_MLGA_DESCRIPTION}</Text>
         </Row>
         <Row Tag="LOC_MLGA_NINGGUANG_DESCRIPTION">
-            <Text>Buy Traders for free, Units, Buildings, Districts cost 20% less [ICON_Gold] Gold. Cities gain standart yield from incoming trade routes.[NEWLINE][NEWLINE]{LOC_MLGA_DESCRIPTION}</Text>
+            <Text>Buy Traders for free, Everything cost 20% less [ICON_Gold] Gold. Cities gain standart yield from incoming trade routes. For each 2 adjacency bonus of Liyue Harbor and Commercial Hub gain 20% [ICON_Gold] Gold, 100% max.[NEWLINE][NEWLINE]{LOC_MLGA_DESCRIPTION}</Text>
         </Row>
         <Row Tag="LOC_UNIT_SP_CONSTRUSTION_TEAM_NAME">
             <Text>Special Constrution Team</Text>
@@ -19,21 +19,39 @@
         </Row>
     </EnglishText>
     <LocalizedText>
+    <!-- 简体中文(Simplified Chinese) -->
         <Row Language="zh_Hans_CN" Tag="LOC_MLGA_NAME" Text="让璃月再次伟大!"/>
         <Row Language="zh_Hans_CN" Tag="LOC_MLGA_DESCRIPTION">
-            <Text>璃月港和其中的建筑额外获得同级对应的邻接加成、[ICON_TradeRoute] 商路容量、[ICON_Gold] 金币和 [ICON_GreatMerchant] 大商人点数。总督甘雨现在可以立即在任何城市上任，且可在她工作的城市中使用 [ICON_Gold] 金币购买区域。</Text>
+            <Text>璃月港和其中的建筑额外获得同级对应的 [ICON_TradeRoute] 商路容量、[ICON_Gold] 金币和 [ICON_GreatMerchant] 大商人点数。总督甘雨现在可以立即在任何城市上任，且可在她工作的城市中使用 [ICON_Gold] 金币购买区域。</Text>
         </Row>
         <Replace Language="zh_Hans_CN" Tag="LOC_MLGA_KEQING_DESCRIPTION">
             <Text>平民单位无视河流的移动力惩罚，并获得2点额外 [ICON_Movement] 移动力，建造者可花费使用次数加速区域和项目的进度。[NEWLINE][NEWLINE]{LOC_MLGA_DESCRIPTION}</Text>
         </Replace>
         <Replace Language="zh_Hans_CN" Tag="LOC_MLGA_NINGGUANG_DESCRIPTION">
-            <Text>可免费购买商人，购买单位、使用 [ICON_Gold] 金币购买时花费-20%。商业中心和港口每有2点邻接加成便为此区域中的建筑+20% [ICON_Gold] 金币，至多生效10点邻接加成。通向本文明城市的商路为目的地城市提供标准产出。[NEWLINE][NEWLINE]{LOC_MLGA_DESCRIPTION}</Text>
+            <Text>可免费购买商人，使用 [ICON_Gold] 金币购买时花费-20%。商业中心和港口每有2点邻接加成便为此区域中的建筑+20% [ICON_Gold] 金币，至多生效10点邻接加成。通向本文明城市的商路为目的地城市提供标准产出。[NEWLINE][NEWLINE]{LOC_MLGA_DESCRIPTION}</Text>
         </Replace>
         <Row Language="zh_Hans_CN" Tag="LOC_UNIT_SP_CONSTRUSTION_TEAM_NAME">
             <Text>直属工程队</Text>
         </Row>
         <Row Language="zh_Hans_CN" Tag="LOC_UNIT_SP_CONSTRUSTION_TEAM_DESCRIPTION">
             <Text>一支玉衡星亲自监理的工程队伍，有极大量行动力。能建造改良设施、道路和铁路、加速区域与项目建造，但需要消耗人口组建。[NEWLINE]在遇敌时会撤退，可以在城市间移动。</Text>
+        </Row>
+    <!-- 繁體中文(Traditional Chinese) -->
+        <Row Language="zh_Hant_HK" Tag="LOC_MLGA_NAME" Text="讓璃月再次偉大!"/>
+        <Row Language="zh_Hant_HK" Tag="LOC_MLGA_DESCRIPTION">
+            <Text>璃月港和其中的建築額外獲得同級對應的 [ICON_TradeRoute] 商路容量、[ICON_Gold] 金幣和 [ICON_GreatMerchant] 大商人點數。總督甘雨現在可以立即在任何城市上任，且可在她工作的城市中使用 [ICON_Gold] 金幣購買區域。</Text>
+        </Row>
+        <Replace Language="zh_Hant_HK" Tag="LOC_MLGA_KEQING_DESCRIPTION">
+            <Text>平民單位無視河流的移動力懲罰，並獲得2點額外 [ICON_Movement] 移動力，建造者可花費使用次數加速區域和項目的進度。[NEWLINE][NEWLINE]{LOC_MLGA_DESCRIPTION}</Text>
+        </Replace>
+        <Replace Language="zh_Hant_HK" Tag="LOC_MLGA_NINGGUANG_DESCRIPTION">
+            <Text>可免費購買商人，使用 [ICON_Gold] 金幣購買時花費-20%。商業中心和港口每有2點鄰接加成便為此區域中的建築+20% [ICON_Gold] 金幣，至多生效10點鄰接加成。通向本文明城市的商路為目的地城市提供標準產出。[NEWLINE][NEWLINE]{LOC_MLGA_DESCRIPTION}</Text>
+        </Replace>
+        <Row Language="zh_Hant_HK" Tag="LOC_UNIT_SP_CONSTRUSTION_TEAM_NAME">
+            <Text>直屬工程隊</Text>
+        </Row>
+        <Row Language="zh_Hant_HK" Tag="LOC_UNIT_SP_CONSTRUSTION_TEAM_DESCRIPTION">
+            <Text>一支玉衡星親自監理的工程隊伍，有極大量行動力。能建造改良設施、道路和鐵路、加速區域與項目建造，但需要消耗人口組建。[NEWLINE]在遇敵時會撤退，可以在城市間移動。</Text>
         </Row>
     </LocalizedText>
 </GameData>

@@ -1,8 +1,3 @@
-INSERT OR IGNORE INTO District_Adjacencies (DistrictType, YieldChangeId)
-SELECT	'DISTRICT_LIYUE_HARBOR', YieldChangeId
-FROM	District_Adjacencies
-WHERE	DistrictType = 'DISTRICT_COMMERCIAL_HUB';
-
 INSERT OR IGNORE INTO District_GreatPersonPoints (DistrictType, GreatPersonClassType, PointsPerTurn)
 SELECT	'DISTRICT_LIYUE_HARBOR', GreatPersonClassType, PointsPerTurn
 FROM	District_GreatPersonPoints
