@@ -12,6 +12,7 @@
 		<Row Type="TRAIT_CIVILIZATION_UNIT_SP_CONSTRUSTION_TEAM" Kind="KIND_TRAIT"/>
 		<Row Type="UNIT_SP_CONSTRUSTION_TEAM" Kind="KIND_UNIT"/>
 		<Row Type="ABILITY_SPCT_PRODUTION" Kind="KIND_ABILITY"/>
+		<Row Type="MODIFIER_ALL_CITIES_ADD_BUILDING_PRODUCTION" Kind="KIND_MODIFIER"/>
 	</Types>
 	<Tags>
 		<Row Tag="CLASS_SPCT" Vocabulary="ABILITY_CLASS"/>
@@ -84,64 +85,64 @@
 		<Row UnitAbilityType="ABILITY_SPCT_PRODUTION" ModifierId="MOD_SPCT_BUILDING_PRODUCITON"/>
 	</UnitAbilityModifiers>
 	<Modifiers>
-		<Row ModifierId="MOD_SPCT_BUILDING_PRODUCITON" ModifierType="MODIFIER_ALL_CITIES_ADD_BUILDING_PRODUCTION" SubjectRequirementSetId="REQSET_SPCT_IN_CITY"/>
+		<Row ModifierId="MOD_SPCT_BUILDING_PRODUCITON" ModifierType="MODIFIER_ALL_CITIES_ADD_BUILDING_PRODUCTION" SubjectRequirementSetId="REQSET_SPCT_NEAR_CITY"/>
 	</Modifiers>
 	<ModifierArguments>
 		<Row ModifierId="MOD_SPCT_BUILDING_PRODUCITON" Name="Amount" Value="1000"/>
 	</ModifierArguments>
 	<RequirementSets>
-		<Row RequirementSetId="REQSET_SPCT_IN_CITY" RequirementSetType="REQUIREMENTSET_TEST_ALL"/>
+		<Row RequirementSetId="REQSET_SPCT_NEAR_CITY" RequirementSetType="REQUIREMENTSET_TEST_ALL"/>
 	</RequirementSets>
 	<RequirementSetRequirements>
-		<Row RequirementSetId="REQSET_SPCT_IN_CITY" RequirementId="REQ_SPCT_IN_CITY"/>
-		<Row RequirementSetId="REQSET_SPCT_IN_CITY" RequirementId="REQUIRES_PLAYER_ALLY"/>
+		<Row RequirementSetId="REQSET_SPCT_NEAR_CITY" RequirementId="REQ_SPCT_NEAR_CITY"/>
+		<Row RequirementSetId="REQSET_SPCT_NEAR_CITY" RequirementId="REQUIRES_PLAYER_ALLY"/>
 	</RequirementSetRequirements>
 	<Requirements>
-		<Row RequirementId="REQ_SPCT_IN_CITY" RequirementType="REQUIREMENT_PLOT_ADJACENT_TO_OWNER"/>
+		<Row RequirementId="REQ_SPCT_NEAR_CITY" RequirementType="REQUIREMENT_PLOT_ADJACENT_TO_OWNER"/>
 	</Requirements>
 	<RequirementArguments>
-		<Row RequirementId="REQ_SPCT_IN_CITY" Name="MaxDistance" Value="3"/>
-		<Row RequirementId="REQ_SPCT_IN_CITY" Name="MinDistance" Value="0"/>
+		<Row RequirementId="REQ_SPCT_NEAR_CITY" Name="MaxDistance" Value="1"/>
+		<Row RequirementId="REQ_SPCT_NEAR_CITY" Name="MinDistance" Value="0"/>
 	</RequirementArguments>
 
 	<PolicyModifiers>
 		<Row>
 			<PolicyType>POLICY_ILKUM</PolicyType>
-			<ModifierId>ILKUM_SP_CONSTRUSTION_TEAMPRODUCTION</ModifierId>
+			<ModifierId>ILKUM_SPCT_PRODUCTION</ModifierId>
 		</Row>
 		<Row>
 			<PolicyType>POLICY_PUBLIC_WORKS</PolicyType>
-			<ModifierId>PUBLICWORKS_SP_CONSTRUSTION_TEAMPRODUCTION</ModifierId>
+			<ModifierId>PUBLICWORKS_SPCT_PRODUCTION</ModifierId>
 		</Row>
 	</PolicyModifiers>
 	<Modifiers>
 		<Row>
-			<ModifierId>ILKUM_SP_CONSTRUSTION_TEAMPRODUCTION</ModifierId>
+			<ModifierId>ILKUM_SPCT_PRODUCTION</ModifierId>
 			<ModifierType>MODIFIER_PLAYER_UNITS_ADJUST_UNIT_PRODUCTION</ModifierType>
 		</Row>
 		<Row>
-			<ModifierId>PUBLICWORKS_SP_CONSTRUSTION_TEAMPRODUCTION</ModifierId>
+			<ModifierId>PUBLICWORKS_SPCT_PRODUCTION</ModifierId>
 			<ModifierType>MODIFIER_PLAYER_UNITS_ADJUST_UNIT_PRODUCTION</ModifierType>
 		</Row>
 	</Modifiers>
 	<ModifierArguments>
 		<Row>
-			<ModifierId>ILKUM_SP_CONSTRUSTION_TEAMPRODUCTION</ModifierId>
+			<ModifierId>ILKUM_SPCT_PRODUCTION</ModifierId>
 			<Name>UnitType</Name>
 			<Value>UNIT_SP_CONSTRUSTION_TEAM</Value>
 		</Row>
 		<Row>
-			<ModifierId>ILKUM_SP_CONSTRUSTION_TEAMPRODUCTION</ModifierId>
+			<ModifierId>ILKUM_SPCT_PRODUCTION</ModifierId>
 			<Name>Amount</Name>
 			<Value>30</Value>
 		</Row>
 		<Row>
-			<ModifierId>PUBLICWORKS_SP_CONSTRUSTION_TEAMPRODUCTION</ModifierId>
+			<ModifierId>PUBLICWORKS_SPCT_PRODUCTION</ModifierId>
 			<Name>UnitType</Name>
 			<Value>UNIT_SP_CONSTRUSTION_TEAM</Value>
 		</Row>
 		<Row>
-			<ModifierId>PUBLICWORKS_SP_CONSTRUSTION_TEAMPRODUCTION</ModifierId>
+			<ModifierId>PUBLICWORKS_SPCT_PRODUCTION</ModifierId>
 			<Name>Amount</Name>
 			<Value>30</Value>
 		</Row>
