@@ -10,6 +10,15 @@ VALUES
 	/* ItmName */ 'LOC_MLGA_NAME',
 	/* Dscrptn */ 'LOC_MLGA_KEQING_DESCRIPTION',
 	/* SortIdx */ 114
+),( --强兼优妮的璃月与稻妻包
+	/* Domain  */ 'Players:Expansion1_Players',
+	/* CivType */ 'CIVILIZATION_LIYUE_TVT',
+	/* LdrType */ 'LEADER_KEQING_TVT',
+	/* ItmType */ 'MLGA',
+	/* ItmIcon */ 'ICON_LEADER_KEQING_TVT',
+	/* ItmName */ 'LOC_MLGA_NAME',
+	/* Dscrptn */ 'LOC_MLGA_KEQING_DESCRIPTION',
+	/* SortIdx */ 114
 ),(
 	/* Domain  */ 'Players:Expansion1_Players',
 	/* CivType */ 'CIVILIZATION_LIYUE_CL',
@@ -36,6 +45,15 @@ VALUES
 	/* LdrType */ 'LEADER_KEQING',
 	/* ItmType */ 'MLGA',
 	/* ItmIcon */ 'ICON_LEADER_KEQING',
+	/* ItmName */ 'LOC_MLGA_NAME',
+	/* Dscrptn */ 'LOC_MLGA_KEQING_DESCRIPTION',
+	/* SortIdx */ 114
+),( --强兼优妮的璃月与稻妻包
+	/* Domain  */ 'Players:Expansion2_Players',
+	/* CivType */ 'CIVILIZATION_LIYUE_CL',
+	/* LdrType */ 'LEADER_KEQING_TVT',
+	/* ItmType */ 'MLGA',
+	/* ItmIcon */ 'ICON_LEADER_KEQING_TVT',
 	/* ItmName */ 'LOC_MLGA_NAME',
 	/* Dscrptn */ 'LOC_MLGA_KEQING_DESCRIPTION',
 	/* SortIdx */ 114

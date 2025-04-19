@@ -1,23 +1,10 @@
-INSERT OR IGNORE INTO District_GreatPersonPoints (DistrictType, GreatPersonClassType, PointsPerTurn)
-SELECT	'DISTRICT_LIYUE_HARBOR', GreatPersonClassType, PointsPerTurn
-FROM	District_GreatPersonPoints
-WHERE	DistrictType = 'DISTRICT_COMMERCIAL_HUB';
-
-INSERT OR IGNORE INTO District_TradeRouteYields (DistrictType, YieldType, YieldChangeAsOrigin, YieldChangeAsDomesticDestination, YieldChangeAsInternationalDestination)
-SELECT	'DISTRICT_LIYUE_HARBOR', YieldType, YieldChangeAsOrigin, YieldChangeAsDomesticDestination, YieldChangeAsInternationalDestination
-FROM	District_TradeRouteYields
-WHERE	DistrictType = 'DISTRICT_COMMERCIAL_HUB';
-
-INSERT OR IGNORE INTO District_CitizenYieldChanges (DistrictType, YieldType, YieldChange)
-SELECT	'DISTRICT_LIYUE_HARBOR', YieldType, YieldChange
-FROM	District_CitizenYieldChanges
-WHERE	DistrictType = 'DISTRICT_COMMERCIAL_HUB';
-
 INSERT INTO Types (Type, Kind)
 VALUES	('TRAIT_MLGA_DISTRICT_LIYUE_HARBOR',	'KIND_TRAIT');
 
 INSERT INTO CivilizationTraits (CivilizationType, TraitType)
-VALUES	('CIVILIZATION_LIYUE_CL',	'TRAIT_MLGA_DISTRICT_LIYUE_HARBOR'	);
+VALUES	('CIVILIZATION_LIYUE_CL',	'TRAIT_MLGA_DISTRICT_LIYUE_HARBOR'	),
+		--强兼优妮的璃月与稻妻包
+		('CIVILIZATION_LIYUE_TVT',	'TRAIT_MLGA_DISTRICT_LIYUE_HARBOR'	);
 
 INSERT INTO Traits (TraitType, Name, Description)
 VALUES	('TRAIT_MLGA_DISTRICT_LIYUE_HARBOR',	NULL,	NULL	);
@@ -59,3 +46,18 @@ VALUES	('MOD_MLGA_BUILDING_LIGHTHOUSE_MARKET_GOLD',	'BuildingType',			'BUILDING_
 		('MOD_MLGA_BUILDING_SEAPORT_STOCK_EXCHANGE_GOLD',	'Amount',				11								),
 		('MOD_MLGA_BUILDING_SEAPORT_STOCK_EXCHANGE_GPP',	'GreatPersonClassType',	'GREAT_PERSON_CLASS_MERCHANT'	),
 		('MOD_MLGA_BUILDING_SEAPORT_STOCK_EXCHANGE_GPP',	'Amount',				1								);
+
+INSERT OR IGNORE INTO District_GreatPersonPoints (DistrictType, GreatPersonClassType, PointsPerTurn)
+SELECT	'DISTRICT_LIYUE_HARBOR', GreatPersonClassType, PointsPerTurn
+FROM	District_GreatPersonPoints
+WHERE	DistrictType = 'DISTRICT_COMMERCIAL_HUB';
+
+INSERT OR IGNORE INTO District_TradeRouteYields (DistrictType, YieldType, YieldChangeAsOrigin, YieldChangeAsDomesticDestination, YieldChangeAsInternationalDestination)
+SELECT	'DISTRICT_LIYUE_HARBOR', YieldType, YieldChangeAsOrigin, YieldChangeAsDomesticDestination, YieldChangeAsInternationalDestination
+FROM	District_TradeRouteYields
+WHERE	DistrictType = 'DISTRICT_COMMERCIAL_HUB';
+
+INSERT OR IGNORE INTO District_CitizenYieldChanges (DistrictType, YieldType, YieldChange)
+SELECT	'DISTRICT_LIYUE_HARBOR', YieldType, YieldChange
+FROM	District_CitizenYieldChanges
+WHERE	DistrictType = 'DISTRICT_COMMERCIAL_HUB';

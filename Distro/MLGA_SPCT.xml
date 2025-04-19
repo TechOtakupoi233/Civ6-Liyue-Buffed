@@ -5,15 +5,23 @@
 	</Traits>
 	<LeaderTraits>
 		<Row LeaderType="LEADER_KEQING" TraitType="TRAIT_CIVILIZATION_UNIT_SP_CONSTRUSTION_TEAM"/>
+		<!-- 强兼优妮的璃月与稻妻包 -->
+		<Row LeaderType="LEADER_KEQING_TVT" TraitType="TRAIT_CIVILIZATION_UNIT_SP_CONSTRUSTION_TEAM"/>
 	</LeaderTraits>
 	<Types>
-		<Row Type="UNIT_SP_CONSTRUSTION_TEAM" Kind="KIND_UNIT"/>
 		<Row Type="TRAIT_CIVILIZATION_UNIT_SP_CONSTRUSTION_TEAM" Kind="KIND_TRAIT"/>
+		<Row Type="UNIT_SP_CONSTRUSTION_TEAM" Kind="KIND_UNIT"/>
+		<Row Type="ABILITY_SPCT_PRODUTION" Kind="KIND_ABILITY"/>
 	</Types>
+	<Tags>
+		<Row Tag="CLASS_SPCT" Vocabulary="ABILITY_CLASS"/>
+	</Tags>
 	<TypeTags>
 		<Row Type="UNIT_SP_CONSTRUSTION_TEAM" Tag="CLASS_LANDCIVILIAN"/>
 		<Row Type="UNIT_SP_CONSTRUSTION_TEAM" Tag="CLASS_BUILDER"/>
 		<Row Type="UNIT_SP_CONSTRUSTION_TEAM" Tag="CLASS_EXTENDED_SHIFT"/>
+		<Row Type="UNIT_SP_CONSTRUSTION_TEAM" Tag="CLASS_SPCT"/>
+		<Row Type="ABILITY_SPCT_PRODUTION" Tag="CLASS_SPCT"/>
 	</TypeTags>
 	<TypeProperties>
 		<Row Type="UNIT_SP_CONSTRUSTION_TEAM" Name="CAN_TELEPORT_TO_CITY" Value="true"/>
@@ -66,6 +74,36 @@
 		<Row DistrictType="DISTRICT_AQUEDUCT" UnitType="UNIT_SP_CONSTRUSTION_TEAM" PercentProductionPerCharge="20"/>
 		<Row DistrictType="DISTRICT_SPACEPORT" UnitType="UNIT_SP_CONSTRUSTION_TEAM" PercentProductionPerCharge="20"/>
 	</District_BuildChargeProductions>
+	<DynamicModifiers>
+		<Row ModifierType="MODIFIER_ALL_CITIES_ADD_BUILDING_PRODUCTION" CollectionType="COLLECTION_ALL_CITIES" EffectType="EFFECT_ADJUST_CITY_PRODUCTION_BUILDING"/>
+	</DynamicModifiers>
+	<UnitAbilities>
+		<Row UnitAbilityType="ABILITY_SPCT_PRODUTION" Name="LOC_ABILITY_SPCT_PRODUTION_NAME" Description="LOC_ABILITY_SPCT_PRODUTION_NAME"/>
+	</UnitAbilities>
+	<UnitAbilityModifiers>
+		<Row UnitAbilityType="ABILITY_SPCT_PRODUTION" ModifierId="MOD_SPCT_BUILDING_PRODUCITON"/>
+	</UnitAbilityModifiers>
+	<Modifiers>
+		<Row ModifierId="MOD_SPCT_BUILDING_PRODUCITON" ModifierType="MODIFIER_ALL_CITIES_ADD_BUILDING_PRODUCTION" SubjectRequirementSetId="REQSET_SPCT_IN_CITY"/>
+	</Modifiers>
+	<ModifierArguments>
+		<Row ModifierId="MOD_SPCT_BUILDING_PRODUCITON" Name="Amount" Value="1000"/>
+	</ModifierArguments>
+	<RequirementSets>
+		<Row RequirementSetId="REQSET_SPCT_IN_CITY" RequirementSetType="REQUIREMENTSET_TEST_ALL"/>
+	</RequirementSets>
+	<RequirementSetRequirements>
+		<Row RequirementSetId="REQSET_SPCT_IN_CITY" RequirementId="REQ_SPCT_IN_CITY"/>
+		<Row RequirementSetId="REQSET_SPCT_IN_CITY" RequirementId="REQUIRES_PLAYER_ALLY"/>
+	</RequirementSetRequirements>
+	<Requirements>
+		<Row RequirementId="REQ_SPCT_IN_CITY" RequirementType="REQUIREMENT_PLOT_ADJACENT_TO_OWNER"/>
+	</Requirements>
+	<RequirementArguments>
+		<Row RequirementId="REQ_SPCT_IN_CITY" Name="MaxDistance" Value="3"/>
+		<Row RequirementId="REQ_SPCT_IN_CITY" Name="MinDistance" Value="0"/>
+	</RequirementArguments>
+
 	<PolicyModifiers>
 		<Row>
 			<PolicyType>POLICY_ILKUM</PolicyType>
